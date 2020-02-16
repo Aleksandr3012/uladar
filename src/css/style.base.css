@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+}
+a {
+	outline: none;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+.a-dash{
+	border-bottom:1px dotted #2679C8;
+	text-decoration:none;
+	display:inline-block; 
+	line-height:100%;
+}
+.a-dash:hover{
+	border:none;
+}
+a:active, a:focus, img { 
+	outline: 0; 
+	outline:none;
+}
+img {
+	border: none;
+}
+input,textarea {
+	vertical-align: middle;
+	outline:none;
+}
+
+
+abbr,article,aside,audio,canvas,datalist,details,
+figure,footer,header,hgroup,mark,menu,meter,nav,output,
+progress,section,time,video{ display: block;}
+/* Form style
+-----------------------------------------------------------------------------*/
+.error{border-color:#CC0000 !important; color:#CC0000 !important;}
+
+.foxbutton span{color:#fff;}
+fieldset{border:none;}
+
+
+#system-message{display:block;}
+#system-message dt{display:none;}
+#system-message dd{display:block; margin:0 0 18px 0; padding:10px 25px; border:1px solid #ccc; border-radius:5px; color:#999; background:#FBFBFB;}
+#system-message .warning{border-color:#FBEED5; background:#FCF8E3; color:#D59870;}
+#system-message .warning a{ color:#D59870;}
+#system-message .error{border-color:#EED3D7; background:#F2DEDE; color:#CC4A48;}
+#system-message .error a{ color:#B94A48;}
+#system-message ul{list-style:none; padding:0;}
+#system-message  li{padding:3px 0;}
+
+/* Layout
+-----------------------------------------------------------------------------*/
+#wrapper {
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+.clr{clear:both;}
+.inner{margin-left: auto; margin-right: auto; position: relative;}
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+  display: block;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#middle {
+	width: 100%;
+	position: relative;
+}
+#middle:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+#content {
+	position: relative;
+}
+
+
+/* Responsiv style
+-----------------------------------------------------------------------------*/
+.col100{width:100%; float:left;}
+.col80{width:80%; float:left;}
+.col75{width:75%; float:left;}
+.col66{width:66.6666%; float:left;}
+.col60{width:60%; float:left;}
+.col50{width:50%; float:left;}
+.col40{width:40%; float:left;}
+.col33{width:33.3333%; float:left;}
+.col20{width:20%; float:left;}
+.col25{width:25%; float:left;}
+.col{float: left;}
+
+.side-left{float:left;}
+.side-righ{float:right;}
+.side-center{margin:0 auto;}
+
+/* Additional style
+-----------------------------------------------------------------------------*/
+

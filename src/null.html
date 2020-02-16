@@ -1,0 +1,446 @@
+<!--#include file="header.html"-->
+<div class="flex-row">
+<main class="content flx-9 flx-m-12">
+
+<div class="demo">
+
+	<h1>Образцы оформления элементов и немного о предусмотренных классах</h1>
+
+	<hr>
+
+	<h1>Заголовок 1</h1>
+	<h2>Заголовок 2</h2>
+	<h3>Заголовок 3</h3>
+	<h4>Заголовок 4</h4>
+	<h5>Заголовок 5</h5>
+	<h6>Заголовок 6</h6>
+	
+	<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты и <a href="#">ссылки</a>. Приставка <a href="#" class="bordered-link">ссылка подчеркнутая</a> жаренные запятой грустный маленький решила дорогу снова, подзаголовок страна, коварных свой текст не заманивший! Осталось от всех если семантика подзаголовок страна она маленькая lorem, толку ты взгляд несколько запятых алфавит языкового агенство правилами сих рукописи моей языком дороге власти рыбными!</p>
+	<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Приставка жаренные запятой грустный маленький решила дорогу снова, подзаголовок страна, коварных свой текст не заманивший! Осталось от всех если семантика подзаголовок страна она маленькая lorem, толку ты взгляд несколько запятых алфавит языкового агенство правилами сих рукописи моей языком дороге власти рыбными!</p>
+	<p><a href="#" class="tooltip tooltip-link">Ссылка с подсказкой<span class="tooltip-answer">Текс всплывающей подсказки</span></a>, при наведении на которые появлется подсказка</p>
+
+	<h5>Выравнивание текста</h5>
+
+	<p>Выравнивание по левому краю <span class="mark">.lefted</span></p>
+
+	<div class="mark-block lefted">
+		Какой-то текст
+	</div>
+
+	<p>Выравнивание по правому краю <span class="mark">.righted</span></p>
+
+	<div class="mark-block righted">
+		Какой-то текст
+	</div>
+
+	<p>Выравнивание по центру <span class="mark">.centered</span></p>
+
+	<div class="mark-block centered">
+		Какой-то текст
+	</div>
+
+	<hr>
+
+	<h2>Кнопки</h2>
+
+	<a href="#" class="btn">Button</a>
+
+	<a href="#" class="btn red">Red button</a>
+
+	<a href="#" class="btn gray">Gray button</a>
+
+	<a href="#" class="btn square">Square button</a>
+
+
+	<h5>Апперкейсом</h5>
+
+	<a href="#" class="btn upper">Button</a>
+
+	<h5>Кастомные размеры</h5>
+
+	<a href="#" class="btn mini gray">Mini gray button</a>
+
+	<a href="#" class="btn big">Big button</a>
+
+	<h5>Кнопки инпутами</h5>
+	
+	<input type="submit" value="Submit" class="btn">
+
+	<input type="reset" value="Reset" class="btn">
+
+	<h5>Блочные кнопки</h5>
+
+	<p>Реализуются добавлением класса	<span class="mark">.block</span></p>
+
+	<a href="#" class="btn block">Block button</a>
+
+	<a href="#" class="btn big square block">Big square block button</a>
+
+	<hr>
+
+	<h2>Заголовок h2. Элементы форм. Чекбоксы, радиокнопки, селекты, инпуты</h2>
+
+	<div class="flex-row">
+		<div class="flx-6 flx-x-12">
+			<p>
+				<label for="check1" class="label-block">
+					<input type="checkbox" id="check1">
+					<span>Чекбокс</span>
+				</label>
+				<label for="check2" class="label-block">
+					<input type="checkbox" id="check2" disabled>
+					<span>Чекбокс заблокиован</span>
+				</label>
+				<label for="check3" class="label-block">
+					<input type="checkbox" id="check3" checked>
+					<span>Чекбокс отмечен</span>
+				</label>
+			</p>
+		</div>
+		<div class="flx-6 flx-x-12">
+			<p>
+				<label for="radio1" class="label-block">
+					<input type="radio" id="radio1">
+					<span>Радиокнопка</span>
+				</label>
+				<label for="radio2" class="label-block">
+					<input type="radio" id="radio2" disabled>
+					<span>Радиокнопка заблокирована</span>
+				</label>
+				<label for="radio3" class="label-block">
+					<input type="radio" id="radio3" checked>
+					<span>Радиокнопка отмечена</span>
+				</label>
+			</p>
+		</div>
+	</div>
+
+
+	<p>Блочные и инлайновые группы чекбоксов и радиокнопок реализуются классами: <span class="mark">.label-block</span> и <span class="mark">.label-inline</span> соответственно</p>
+	
+	<p>
+	<label for="rd1" class="label-inline">
+		<input type="radio" id="rd1" name="rd">
+		<span>Вариант 1</span>
+	</label>
+	<label for="rd2" class="label-inline">
+		<input type="radio" id="rd2" name="rd">
+		<span>Вариант 2</span>
+	</label>
+	<label for="rd3" class="label-inline">
+		<input type="radio" id="rd3" name="rd">
+		<span>Вариант 3</span>
+	</label>
+	<label for="rd4" class="label-inline">
+		<input type="radio" id="rd4" name="rd">
+		<span>Вариант 4</span>
+	</label>
+	</p>
+
+	<div class="flex-row">
+		<div class="flx-6 flx-x-12">
+			<p>Простой селект</p>
+			<select id="select1">
+				<option value="Опция 1">Опция 1</option>
+				<option value="Опция 2">Опция 2</option>
+				<option value="Опция 3">Опция 3</option>
+				<option value="Опция 4">Опция 4</option>
+			</select>
+			<br><br>
+			<p>Мини селект</p>
+			<select class="select-mini" id="select2">
+				<option value="Опция 1">Опция 1</option>
+				<option value="Опция 2">Опция 2</option>
+				<option value="Опция 3">Опция 3</option>
+				<option value="Опция 4">Опция 4</option>
+			</select>
+			<br><br>
+			<p>Селект, стилизованный под ссылку</p>
+			<select class="select-dashed" id="select2">
+				<option value="Опция 1">Опция 1</option>
+				<option value="Опция 2">Опция 2</option>
+				<option value="Опция 3">Опция 3</option>
+				<option value="Опция 4">Опция 4</option>
+			</select>
+			<br><br>
+		</div>
+		<div class="flx-6 flx-x-12">
+			<p>Селект с возможностью множественного выбора</p>
+			<select id="select2" multiple>
+				<option value="Опция 1">Опция 1</option>
+				<option value="Опция 2">Опция 2</option>
+				<option value="Опция 3">Опция 3</option>
+				<option value="Опция 4">Опция 4</option>
+			</select>
+		</div>
+	</div>
+
+	<p><input type="text" placeholder="Я простой инпут"></p>
+
+	<p><input type="text" placeholder="Я заблокированный инпут" disabled></p>
+
+	<p>Нужно растянуть инпут на всю ширину контейнера, добавьте класс <span class="mark">.wide</span></p>
+
+	<p><input type="text" class="wide" placeholder="я широкий инпут"></p>
+
+	<p>Также инпуты и селекты растягиваются на 100% внутри блоков <span class="mark">.reply-field</span>, предназначеных для обертки полей форм. Пример</p>
+
+	<div class="reply-field">
+		<label for="" class="label-block">Я лабел поля
+			<div class="tooltip">?
+				<div class="tooltip-answer">Я текст всплывающей подсказки. Помогаю быстро проинформировать пользователя о требующихся от действиях или о чем-либо еще.</div>
+			</div>
+		</label>
+		<input type="text" placeholder="А я само поле">
+	</div>
+
+	<div class="reply-field">
+		<input type="text" class="invalid" placeholder="Я инпут с ошибкой">
+		<span class="invalid">Ошибка</span>
+	</div>
+
+	<div class="reply-field">
+		<input type="text" class="valid" placeholder="Я успешно провалидированный инпут">
+	</div>
+
+	<hr>
+
+	<h2>Списки</h2>
+
+	<div class="flex-row">
+		<div class="flx-6 flx-x-12">
+			<ul>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor.</li>
+			</ul>
+		</div>
+		<div class="flx-6 flx-x-12">
+			<ol>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor.</li>
+			</ol>
+		</div>
+	</div>
+
+	
+
+	<p>Ко всем спискам внутри блока <span class="mark">.container</span>, а это контентная область сайта (все кроме хедера и футер), применяются данные стили. Не форматированые списки реализуются добавлением класса <span class="mark">.not-styled</span>. Пример:</p>
+	
+	<ul class="not-styled">
+		<li>Это не форматированный "чистый" список</li>
+		<li>Это не форматированный "чистый" список</li>
+		<li>Это не форматированный "чистый" список</li>
+	</ul>
+
+	<hr>
+
+	<h2>Таблицы</h2>
+	
+	<table>
+		<tbody>
+			<tr>
+				<td>same text</td>
+				<td>same text</td>
+				<td>same text</td>
+			</tr>
+			<tr>
+				<td>same text</td>
+				<td>same text</td>
+				<td>same text</td>
+			</tr>
+			<tr>
+				<td>same text</td>
+				<td>same text</td>
+				<td>same text</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p>"Полосатые" таблицы реализуются добавлением класса <span class="mark">.even-odd</span></p>
+
+	<table class="even-odd">
+		<tbody>
+			<tr>
+				<td>same text</td>
+				<td>same text</td>
+				<td>same text</td>
+			</tr>
+			<tr>
+				<td>same text</td>
+				<td>same text</td>
+				<td>same text</td>
+			</tr>
+			<tr>
+				<td>same text</td>
+				<td>same text</td>
+				<td>same text</td>
+			</tr>
+			<tr>
+				<td>same text</td>
+				<td>same text</td>
+				<td>same text</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p>Таблицы без бордеров реализуются добавлением класса <span class="mark">.no-borders</span>. Для удаления паддингов <span class="mark">.no-paddings</span></p>
+
+	<table class="even-odd no-borders">
+		<tbody>
+			<tr>
+				<td>same text</td>
+				<td>same text</td>
+				<td>same text</td>
+			</tr>
+			<tr>
+				<td>same text</td>
+				<td>same text</td>
+				<td>same text</td>
+			</tr>
+			<tr>
+				<td>same text</td>
+				<td>same text</td>
+				<td>same text</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<hr>
+
+	<h2>Пангинация</h2>
+
+	<div class="pgn">
+		<a href="#" class="pgn-prev"></a>
+		<a href="#">1</a>
+		<span>2</span>
+		<a href="#">3</a>
+		<a href="#">4</a>
+		<a href="#">5</a>
+		<a href="#" class="pgn-next"></a>
+	</div>
+
+	<hr>
+
+	<h2>Алерты</h2>
+
+	<p>Простые информационные уведомления: <span class="mark">.alert</span></p>
+
+	<div class="alert">Какое-то информационное сообщение</div>
+
+	<div class="alert success">Поздровляем! Ваше сообщение отправлено!</div>
+
+	<div class="alert error">Ошибка! Ваше сообщение не отправлено!</div>
+
+	<div class="alert attention">Внимание! За следуещее нарушение правил сайта ваш аккаунт будет заблокирован!</div>
+
+</div><!--.white-block-->
+
+<div class="demo">
+	<h1>Сетка</h1>
+
+	<p>Сетка на базе flex'ов. Заимствована у Bootstrap 4/Foundation, единственное отличие - система наименования классов. Также как и в выше упомянутых фреймворках, колонки должны находится непосредственно внутри контейнера с отрицательными отступами, у нас это <span class="mark">.flex-row</span>. Колонки обозначаются классами <span class="mark">.flx-</span> c числовыми постфиксами от 1 до 12. Например, блок <span class="mark">.flx-6</span> будет соответствовать половине ширины родительского контейнера</p>
+
+	<div class="flex-row">
+		<div class="flx-4"><div class="mark-block">.flx-4</div></div>
+		<div class="flx-4"><div class="mark-block">.flx-4</div></div>
+		<div class="flx-4"><div class="mark-block">.flx-4</div></div>
+		<div class="flx-9"><div class="mark-block">.flx-9</div></div>
+		<div class="flx-3"><div class="mark-block">.flx-3</div></div>
+		<div class="flx-12"><div class="mark-block">.flx-12</div></div>
+	</div>
+
+	<h2 class="centered">Почему флексы? Что они могут?</h2>
+	<h3>1. Равномерное распределение пространства.</h3>
+	<p>Блоки с классом <span class="mark">.flx</span> будут равномерно разделять между собой всю доступную ширину родительского контейнера.</p>
+
+	<div class="flex-row">
+		<div class="flx"><div class="mark-block">.flx</div></div>
+		<div class="flx"><div class="mark-block">.flx</div></div>
+		<div class="flx"><div class="mark-block">.flx</div></div>
+		<div class="flx"><div class="mark-block">.flx</div></div>
+		<div class="flx"><div class="mark-block">.flx</div></div>
+	</div>
+
+	<p>Разметка абсолютно идентичная, но флекс-элементов теперь всего 2. Магия!</p>
+
+	<div class="flex-row">
+		<div class="flx"><div class="mark-block">.flx</div></div>
+		<div class="flx"><div class="mark-block">.flx</div></div>
+	</div>
+
+	<h3>2. Вертикальное выравнивание(оно же выравание вдоль поперечной оси)</h3>
+
+	<p>По умолчанию флекс-элементы растягиваются на всю высоту родительского контейнера, но это поведение можно переопределить</p>
+
+	<p>Центрирование по вертикали: <span class="mark">.valign-center</span>. <strong>Важно: </strong> класс добавляется флекс-контейнеру, не элементам.</p>
+
+	<div class="flex-row valign-center">
+		<div class="flx"><div class="mark-block" style="height: 45px;">.flx</div></div>
+		<div class="flx"><div class="mark-block" style="height: 89px;">.flx</div></div>
+		<div class="flx"><div class="mark-block" style="height: 58px;">.flx</div></div>
+	</div>
+
+	<p>Вертикальное выравнивание по верхнему краю родителя: <span class="mark">.valign-start</span></p>
+	
+	<div class="flex-row valign-start">
+		<div class="flx"><div class="mark-block" style="height: 45px;">.flx</div></div>
+		<div class="flx"><div class="mark-block" style="height: 89px;">.flx</div></div>
+		<div class="flx"><div class="mark-block" style="height: 58px;">.flx</div></div>
+	</div>
+
+	<p>Вертикальное выравнивание по нижнему краю родителя: <span class="mark">.valign-end</span></p>
+	
+	<div class="flex-row valign-end">
+		<div class="flx"><div class="mark-block" style="height: 45px;">.flx</div></div>
+		<div class="flx"><div class="mark-block" style="height: 89px;">.flx</div></div>
+		<div class="flx"><div class="mark-block" style="height: 58px;">.flx</div></div>
+	</div>
+
+	<p>Вертикальное выравнивание по базовой линии текста: <span class="mark">.valign-baseline</span></p>
+	
+	<div class="flex-row valign-baseline">
+		<div class="flx"><div class="mark-block" style="height: 45px; font-size:24px">.flx</div></div>
+		<div class="flx"><div class="mark-block" style="height: 89px;">.flx</div></div>
+		<div class="flx"><div class="mark-block" style="height: 58px; font-size: 32px;">.flx</div></div>
+	</div>
+
+	<h3>3. Горзионтальное выравнивание (выравание вдоль главной оси)</h3>
+
+	<p>По умолчанию флекс-элементы "прижимаются" к левому краю флекс контейнера:</p>
+	
+	<div class="flex-row">
+		<div class="flx-2"><div class="mark-block">.flx-2</div></div>
+		<div class="flx-2"><div class="mark-block">.flx-2</div></div>
+		<div class="flx-2"><div class="mark-block">.flx-2</div></div>
+	</div>
+
+	<p>Выравнием по центру (горизонтальному): <span class="mark">.align-center</span></p>
+
+	<div class="flex-row align-center">
+		<div class="flx-2"><div class="mark-block">.flx-2</div></div>
+		<div class="flx-2"><div class="mark-block">.flx-2</div></div>
+		<div class="flx-2"><div class="mark-block">.flx-2</div></div>
+	</div>
+
+	<p>По правому краю: <span class="mark">.align-right</span></p>
+
+	<div class="flex-row align-right">
+		<div class="flx-2"><div class="mark-block">.flx-2</div></div>
+		<div class="flx-2"><div class="mark-block">.flx-2</div></div>
+		<div class="flx-2"><div class="mark-block">.flx-2</div></div>
+	</div>
+
+	<p>Равномерно расределяем вдоль главной оси, при чем первый и последний флекс-элементы прижимаются к левому и правому краям контейнера соответственно: <span class="mark">.align-justify</span></p>
+
+	<div class="flex-row align-justify">
+		<div class="flx-2"><div class="mark-block">.flx-2</div></div>
+		<div class="flx-2"><div class="mark-block">.flx-2</div></div>
+		<div class="flx-2"><div class="mark-block">.flx-2</div></div>
+	</div>
+
+</div>
+</main>
+</div>
+<!--#include file="footer.html"-->

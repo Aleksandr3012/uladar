@@ -1,0 +1,23 @@
+.checkbox {
+	vertical-align: middle;
+	width: 20px;
+	height: 21px;
+	background: url(../images/checkbox.png) no-repeat;
+	cursor: pointer;
+	margin-right:5px;
+}
+.checkbox.checked {
+	background-position: -20px 0;
+}
+.checkbox.disabled {
+	background-position: 0 -21px;
+}
+.checkbox.checked.disabled {
+	background-position: -20px -21px;
+}
+.checkbox.focused {
+	background-position: 0 -42px;
+}
+.checkbox.checked.focused {
+	background-position: -20px -42px;
+}

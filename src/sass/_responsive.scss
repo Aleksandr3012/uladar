@@ -1,0 +1,149 @@
+/* --
+RESPONSIVE STYLES ----------------------- */
+
+
+@media only screen and (max-width : 1360px) {
+
+.logos .logo {
+	margin-right: 20px;
+	max-width: 150px;
+}
+.logo-front {
+	max-width: 75px;
+}
+
+.main-menu, .langs {
+	ul {
+
+		li {
+
+			a {
+				padding: 5px 12px;
+			}
+		}
+	}
+}
+.langs ul li a.active:after,
+.langs ul li a:hover:after {
+	left: 12px;
+	right: 12px;
+}
+.navigation .devider {
+	margin-left: 12px;
+	margin-right: 12px;
+}
+.search-toogler {
+	margin-left: 12px;
+}
+.screen-slide {
+	.about {
+		top: 160px;
+	}
+}
+
+}/*1360px end*/
+
+
+
+@media only screen and (max-width : 360px) {
+
+}/*360px*/
+
+
+@media only screen and (max-width : 320px) {
+
+}/*320px*/
+
+
+@media screen and (max-height : 800px) {
+
+.slick-screen-nav {
+	/*padding: 15px 0px;*/
+
+	.icons {
+		padding: 10px 15px;
+	}
+
+	.icons a {
+		margin-bottom: 5px;
+		width: 38px;
+		height: 38px;
+		padding: 5px;
+	}
+	.links {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 67px;
+
+		a {
+			margin-bottom: 5px;
+			height: 38px;
+		}
+	}
+	svg.sprite {
+		width: 28px;
+		height: 28px;
+	}
+}
+.f-bottom {
+	padding: 10px 30px;
+	@include fz(10);
+}
+
+}/*800px height*/
+
+
+@media screen and (max-height : 720px) {
+
+.slick-screen-nav {
+	/*padding: 15px 0px;*/
+
+	.icons {
+		padding: 10px 15px;
+	}
+
+	.icons a {
+		margin-bottom: 4px;
+		width: 34px;
+		height: 34px;
+		padding: 4px;
+	}
+	.links {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 64px;
+
+		a {
+			margin-bottom: 4px;
+			height: 34px;
+			line-height: 1;
+			font-size: 12px;
+		}
+	}
+	svg.sprite {
+		width: 26px;
+		height: 26px;
+	}
+}
+.screen-slide .img {
+	bottom: 50px;
+
+	img {max-height: 55vh;}
+}
+.screen-slide .about {
+	top: 130px;
+}
+.screen-slide .about .item img {
+	max-height: 23.5vh;
+}
+.h-inner {
+	padding-top: 10px 30px;
+}
+.logos .logo {
+	max-width: 130px;
+}
+.logo-front {
+	max-width: 60px;
+}
+
+}/*720px height*/

@@ -1,0 +1,94 @@
+.header {
+	background-color: #7d6636;
+	padding-bottom: 295px;
+	background-image: url(../images/top-bg-about.png);
+	background-position: top center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.h-inner {
+	padding: 20px 30px;
+}
+.navigation {
+	@extend %flex, %jfe, %aic;
+	@include fz(16);
+
+	.devider {
+		display: inline-block;
+		width: 1px;
+		height: 20px;
+		background: rgba(#FFF, .5);
+		margin-left: 17px;
+		margin-right: 17px;
+	}
+}
+.main-menu, .langs {
+	ul {
+		font-size: 0;
+
+		li {
+			display: inline-block;
+			vertical-align: middle;
+
+			a {
+				display: block;
+				@include fz(16);
+				color: rgba(#FFF, .6);
+				padding: 5px 17px;
+
+				&.active, &:hover {
+					color: #FFF;
+				}
+			}
+		}
+	}
+}
+.langs {
+	ul {
+		li {
+			a {
+				position: relative;
+
+				&.active, &:hover {
+					&:after {
+						content: "";
+						position: absolute;
+						height: 2px;
+						background: $yellow;
+						left: 18px;
+						right: 18px;
+						bottom: 3px;
+					}
+				}
+			}
+		}
+	}
+}
+.search-toogler {
+	margin-left: 17px;
+	cursor: pointer;
+
+	&:hover {
+		svg {
+			fill: $yellow;
+		}
+	}
+}
+.svg-searcher {
+	width: 20px;
+	height: 20px;
+	fill: #FFF;
+}
+
+
+.header-bg {
+	&.js {
+		display: none;
+		visibility: hidden;
+	}
+}
+.logos {
+	.logo {
+		margin-right: 30px;
+	}
+}

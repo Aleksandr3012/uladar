@@ -1,0 +1,94 @@
+<div id="popup-offer" class="white-popup offer zoom-anim-dialog">
+  <div class="popup-inner">
+
+  	<div class="h2">Предложить новость</div>
+    
+  	<form action="#" id="popup-offer-form">
+
+    <div class="field">
+      <label for="field_name" class="label-block">Ваше имя</label>
+      <input type="text" name="field_name">
+    </div>
+
+    <div class="field">
+      <label for="field_tel" class="label-block">Ваш телефон или e-mail</label>
+      <input type="text" name="field_tel">
+    </div>
+    
+    <div class="field">
+      <label for="field_time" class="label-block">Сообщение</label>
+      <textarea name="" id="" rows="5"></textarea>
+    </div>
+
+    <div class="field field-file">
+      <input type="file" data-placeholder="Прикрепить фото (jpg, png, gif)">
+    </div>
+
+    <div class="inline-row">
+      <div class="span-5 span-x-12">
+        <div class="field">
+          <label for="" class="label-block">Символы на картинке</label>
+          <input type="text">
+        </div>
+      </div>
+      <div class="span-7 span-x-12">
+        <div class="field">
+          <label class="label-block empty-fix">Fix</label>
+          <div class=" flex valign-center">
+            <div class="captcha"><img src="images/examples/captcha.jpg" alt=""></div>
+            <a href="#" class="reload-captcha"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="reply-btns">
+      <input type="submit" value="Отправить" class="block btn upper">
+    </div>
+
+  	</form>
+  </div>
+<script type="text/javascript">
+  jQuery(document).ready(function($){
+
+    $('.white-popup input[type="checkbox"], .white-popup  input[type="radio"], .white-popup input[type="file"], .white-popup select').styler({
+      singleSelectzIndex: '1',
+    });
+
+    //дефолтные настройки валидатора
+    jQuery.validator.setDefaults({
+      debug: true,
+      errorClass: 'invalid',
+      successClass: 'valid',
+      focusInvalid: false,
+    });
+    //дефолтные сообщения, предупреждения
+    jQuery.extend(jQuery.validator.messages, {
+      required: "Обязательное поле",
+      email: "Некорректный email адрес",
+      url: "Некорректный URL",
+      number: "Некорректный номер",
+      digits: "Это поле поддерживает только числа",
+      equalTo: "Поля не совпадают",
+      maxlength: jQuery.validator.format('Максимальная длина поля {0} символа(ов)'),
+      minlength: jQuery.validator.format('Минимальная длина поля {0} символа(ов)'),
+    });
+
+    $("#popup-offer-form").validate({
+      /*rules: {
+        field_name: {
+          minlength: 3,
+        },
+        field_tel: {
+          required: true,
+          minlength: 6,
+        },
+      },
+      submitHandler: function(){
+        //сабмит формы
+      }*/
+    });
+  });
+</script>
+</div>
