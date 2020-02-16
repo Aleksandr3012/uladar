@@ -3,7 +3,7 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: true,
-		fade: true,
+		// fade: true,
 		rtl: false,
 		asNavFor: '.s-ingredients__slider--sm-js'
 	});
@@ -13,7 +13,7 @@ $(document).ready(function() {
 		asNavFor: '.s-ingredients__slider--lg-js',
 		dots: false,
 		arrows: false,
-		centerMode: true,
+		// centerMode: true,
 		focusOnSelect: true,
 		rtl: false
 	});
