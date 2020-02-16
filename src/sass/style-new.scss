@@ -23,15 +23,22 @@
 
 	&__img-wrap {
 		position: relative;
-		max-width: 580px;
-		@media screen and (min-width: 1000px) {
-			height: 370px;
-		}
+		// max-width: 580px;
 		border-radius: 10px 10px 0 0;
 		overflow: hidden;
 		img {
-			width: 100%;
+			object-fit: cover;
 			height: 100%;
+			width: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		&::after {
+			content: '';
+			padding-bottom: (100 * 100% / 180);
+			display: block;
+			height: 0;
 		}
 		&::before {
 			content: '';
@@ -157,39 +164,26 @@
 }
 
 .s-ingredients {
-	&__quantity li,
-	&__element li {
-		line-height: 2;
-		padding-left: 0 !important;
-		&::before {
-			display: none;
-		}
-	}
-	.flx-12 {
-		display: flex;
-	}
-
-	&__quantity {
-		width: 49%;
-	}
-
-	&__element {
-		width: 51%;
-		li {
+	&__composition {
+		td {
+			border: none !important;
 			position: relative;
-			overflow: hidden;
-
-			&::after {
-				content: '';
-				position: absolute;
-				border-bottom: 1px dashed #eaecec;
-				width: 100%;
-				bottom: 4px;
-				left: 2px;
+			padding: 0 0 10px !important;
+			&:nth-child(2) {
+				width: 49%;
+			}
+			&:nth-child(1){
+				&::after {
+					content: '';
+					position: absolute;
+					border-bottom: 1px dashed #eaecec;
+					width: 100%;
+					bottom: 13px;
+					left: 2px;
+				}
 			}
 		}
 	}
-
 	&__accent {
 		color: #de1b1b;
 		position: relative;
@@ -211,7 +205,7 @@
 	}
 
 	&__description {
-		@media screen and (min-width: 600px) {
+		@media screen and (min-width: 992px) {
 			
 			padding-bottom: 80px;
 		}
